@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.main {
+  min-height: 100vh;
+  background-image: url(./images/developer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2rem;
+}
+.main p {
+  color: white;
+  font-size: 3.5rem;
+  line-height: 1.25;
+}
+span {
+  line-height: 1;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.work {
+  background-color: black;
+  padding: 2rem 1rem;
+}
+
+.work h1 {
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  gap: 3.5rem;
+  padding: 4rem 2rem;
+
+  margin: 0 auto;
+  width: 100%;
+}
+
+.skill {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 350px;
+
+  border-radius: 1rem;
+
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+
+  transition: transform 0.5s ease-in-out;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.skill .image {
+  width: 100%;
+}
+.skill img {
+  width: 100%;
+}
+
+.skill .text_content {
+  padding: 1.5rem;
+}
+
+.skill .text_content h3 {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+
+.skill .text_content p {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.details {
+  display: flex;
+
+  color: white;
+}
+.details .contact {
+  background-color: #515603;
+
+  padding: 2.5rem;
+}
+
+.details .about {
+  background-color: #722300;
+
+  padding: 2.5rem;
+}
+.details h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.details p {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+footer {
+  background-color: #000000;
+}
+footer p {
+  background-color: #000000;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 300;
+  padding: 1.25rem 0;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .main p {
+    font-size: 3rem;
+  }
+  span .work h1 {
+    font-size: 3.5rem;
+  }
+  .skill {
+    max-width: 300px;
+  }
+
+  .details h1 {
+    font-size: 3.25rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .main p {
+    font-size: 2rem;
+  }
+  span {
+    font-size: 1.5rem;
+  }
+
+  .work h1 {
+    font-size: 2rem;
+  }
+  .skill {
+    max-width: 275px;
+  }
+
+  .details h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .details {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .main p {
+    font-size: 1.5rem;
+  }
+  span {
+    font-size: 1rem;
+  }
+
+  .work h1 {
+    font-size: 1.5rem;
+  }
+
+  .details h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .main p {
+    font-size: 1.25rem;
+  }
+  span {
+    font-size: 1rem;
+  }
+
+  .work h1 {
+    font-size: 1.25rem;
+  }
+
+  .skills {
+    padding: 4rem 1rem;
+  }
+  .skill {
+    max-width: 275px;
+    width: 95%;
+  }
+  .details h1 {
+    font-size: 1.5rem;
+  }
+  .details p {
+    font-size: 1rem;
+
+    margin-bottom: 1rem;
+    letter-spacing: 0px;
+  }
+
+  .details .contact {
+    padding: 1.5rem;
+  }
+
+  .details .about {
+    padding: 1.5rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}
